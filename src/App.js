@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Header";
+import Heroarea from "./Heroarea";
+import Featuredgame from "./Featuredgame";
+import Activities from "./Activities";
+import Getstarted from "./Getstarted";
+import Recentwinner from "./Recentwinner";
+import Footer from "./Footer";
+import Singinpopup from "./Signinpopup";
+import Joinuspopup from "./Joinuspopup";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+  return(
+    <> 
+
+      <Header/> 
+      <Heroarea/>
+      <Featuredgame/>
+      <Activities/>
+      <Getstarted/>
+      <Recentwinner/>
+      <Footer/>
+      <Singinpopup/>
+      <Joinuspopup/>
+
+    </>
   );
-}
+};
 
 export default App;
+
